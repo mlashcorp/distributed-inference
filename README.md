@@ -3,7 +3,7 @@
 ## Overview
 This repository contains an implementation of the [Megatron-LM paper](https://arxiv.org/abs/1909.08053) based on [Andrej Karpathy's Nano GPT codebase](https://github.com/karpathy/nanoGPT).
 
-The purpose of this exercise was to explore distributed inference so the code was simplified where possible for readability (e.g., removing anything specifically related to training, implementing attention without torch's flash attention).
+The purpose of this exercise was to explore distributed inference. As such, the code was simplified where possible for readability (e.g., removing anything specifically related to training, implementing attention without torch's flash attention).
 
 I’ve opted to use Andrej's GPT-2 implementation because it's super small and easy to understand. Also, he has a great video walking through all the code on YouTube. This code simulates machine-to-machine communication by leveraging Python's BaseManager process to hold the distributed state between processes and simulate a blocking, distributed, all reduce operation.
 
